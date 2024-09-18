@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect} from "react";
+import Cards from "./Cards";
+import Upload from "./Upload";
 
-function App() {
+const App = () => {
+  const [reloadCards, setReloadCards] = useState(false);
+  const triggerCardReload = () => {
+    setReloadCards((prev) => !prev);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="col-sm-8 offset-sm-2 p-3 border border-dark border-3 rounded-5" style={{ backgroundColor: 'rgb(202, 219, 255)' }}>
+      {/* <Upload onUploadSuccess={triggerCardReload} /> */}
+      <Cards key={reloadCards} />
     </div>
   );
-}
+};
 
 export default App;
