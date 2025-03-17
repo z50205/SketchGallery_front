@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from "react";
+import { Routes, Route } from "react-router-dom";
 import Cards from "./Cards";
 import Upload from "./Upload";
 
@@ -9,9 +10,15 @@ const App = () => {
   };
 
   return (
-    <div className="col-sm-8 offset-sm-2 p-3 border border-dark border-3 rounded-5" style={{ backgroundColor: 'rgb(202, 219, 255)' }}>
-      {/* <Upload onUploadSuccess={triggerCardReload} /> */}
-      <Cards key={reloadCards} />
+    <div>
+      <Routes>
+      <Route path="" element={
+          <>
+            {/* <Upload onUploadSuccess={triggerCardReload} /> */}
+            <Cards key={reloadCards} />
+          </>
+        } />
+      </Routes>
     </div>
   );
 };

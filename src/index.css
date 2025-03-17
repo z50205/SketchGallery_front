@@ -1,0 +1,74 @@
+  .content{
+    color: rgb(184, 184, 184);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-left:1rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+  .loginform{
+    margin-left:1rem;
+    margin-top:10px;
+    margin-bottom:30px;
+  }
+  .table_content{
+    color: rgb(184, 184, 184);
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  .icon{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size:2.5vw;
+  }
+  span{
+    margin: 5px;
+  }
+  .pagination{
+    background-color: transparent;
+  }
+  .page-item{
+    background-color: transparent;
+  }
+  .page-link{
+    background-color: transparent;
+    color:white;
+  }
+  .disabled > .page-link{
+    background-color: transparent;
+    color:rgb(85, 85, 85)
+  }
+  @media (max-width:600px) {
+    h1{
+      font-size: 5vw;
+      margin:2vw;
+      }
+    h3{
+      font-size:4vw;
+      }
+    .content{
+      font-size: 3.5vw;
+    }
+  }
+  @media (min-width: 768px) {
+    .icon{
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+      font-size:1.4vw;
+    }
+  }
+  @media (min-width: 1200px) {
+    .icon{
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+      font-size:1.0vw;
+    }
+  }
+  @media (min-width: 1600px) {
+    .icon{
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+      font-size:1.2rem;
+    }
+  }
+  
